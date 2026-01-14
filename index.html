@@ -16,14 +16,14 @@
         <H2>Menú:</H2>
         <nav>
             <ol type="1">
-            
-            <li>ChatGPT</li>
-            <li>DeepSeek</li>
-            <li>Gemini</li>
 
-        </ol>
+                <li>ChatGPT</li>
+                <li>DeepSeek</li>
+                <li>Gemini</li>
+
+            </ol>
         </nav>
-        
+
 
     </header>
     <main>
@@ -60,6 +60,41 @@
                 rel="noopener noreferrer"><button>Gemini</button></a>
         </article>
     </main>
+    <footer>
+        <form action="">
+            <h1>Deixa la teva valoració</h1>
+
+            <label for="username">Nom: </label>
+            <input type="text" id="username" placeholder="Escriu el teu nombre">
+            <br><br>
+            <label for="email">Correu electrònic: </label>
+            <input type="email" id="email" placeholder="example@gmail.com">
+            <br><br>
+            <label for="IA">Quina IA vols valorar? </label>
+            <select name="IA">
+                <option value="ChatGPT">ChatGPT</option>
+                <option value="Gemini">Gemini</option>
+                <option value="DeepSeek">DeepSeek</option>
+            </select>
+            <br><br>
+            <label for="valor">Com valores aquesta IA? </label>
+            <input type="radio" name="valor" value="Excel·lent" id="op1">
+            <label for="op1">Excel·lent</label>
+            <input type="radio" name="valor" value="Bona" id="op2">
+            <label for="op2">Bona</label>
+            <input type="radio" name="valor" value="Millorable" id="op3">
+            <label for="op3">Millorable</label>
+            <br><br>
+            <label for="comentari">Comentari: </label>
+            <textarea name="comentari" id="comentari" placeholder="Escriu aquí els teus comentaris..." rows="4" cols="40"></textarea>
+            <br><br>
+            <input type="checkbox" name="vull" id="a">
+            <label for="a">Vull rebre novetats sobre IA</label>
+            <br><br>
+            <button>Enviar</button>
+
+        </form>
+    </footer>
 
 </body>
 
