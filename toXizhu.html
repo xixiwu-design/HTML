@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="喜竹日记">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日记博客</title>
+    <style>
+        /* 手机优先样式 */
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            font-size: 16px;
+            background-color: #fff8f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 15px;
+        }
+
+        header h1 {
+            font-size: 28px;
+            margin: 0 0 10px 0;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 0;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        article h2 {
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+
+        article time {
+            font-size: 12px;
+            color: #999;
+        }
+
+        article p {
+            line-height: 1.5;
+            margin: 10px 0;
+        }
+
+        article img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+
+        aside {
+            background-color: #fff0e0;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+        }
+
+        aside h3 {
+            font-size: 18px;
+            margin-top: 0;
+        }
+
+        aside ul {
+            padding-left: 20px;
+        }
+
+        aside ul li {
+            margin-bottom: 5px;
+        }
+
+        footer {
+            background-color: #ff6f61;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        strong {
+            color: #d35400;
+        }
+
+        em {
+            font-style: italic;
+        }
+
+        /* 响应式大屏样式 */
+        @media(min-width: 600px){
+            main {
+                flex-direction: row;
+            }
+            article {
+                flex: 3;
+                margin-right: 20px;
+            }
+            aside {
+                flex: 1;
+                margin-bottom: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>喜竹日记 </h1>
+    <nav>
+        <a href="#">首页就这</a>
+        <a href="#">关于喜竹</a>
+        <a href="#">别联系我</a>
+        <a href="#">不提供服务</a>
+    </nav>
+</header>
+
+<main>
+    <!-- 文章主体 -->
+    <article>
+        <h2>糟糕 太糟糕了</h2>
+        <time datetime="2026-01-21">2026年1月21日</time>
+
+        <p>我养的喜竹好像生病了，喂她吃了点老鼠药，希望她能早日康复</p>
+
+        <img src="data:image/jpeg;base64,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" alt="食我老鼠药">
+
+    </article>
+
+   
+    <aside>
+        <h3>相关文章</h3>
+        <ul>
+            <li><a href="#">我养的喜竹不幸离世了，愿她在天堂安息</a></li>
+            <li><a href="#">最后一次对我养的喜竹说再见（R.I.P）</a></li>
+            <li><a href="#">死去喜竹通灵大挑战！</a></li>
+            <li><a href="#">死去喜竹突然开始攻击我！？</a></li>
+        </ul>
+    </aside>
+</main>
+
+<footer>
+    <p>联系我：<a href="mailto:diary@example.com">没有被开户的义务</a></p>
+</footer>
+
+</body>
+</html>

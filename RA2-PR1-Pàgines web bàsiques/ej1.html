@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Es una página de blog">
+    <link rel="icon" href="img/html-5.icp">
+
+    <title>Introducción a HTML</title>
+
+    <style>
+        body{
+            background-color: rgb(255, 255, 255);
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+        .header{
+            padding: 10px;
+            background-color: #e8f0ff;
+        }
+        time{
+            color: gray;
+        }
+        
+         aside {
+            background-color: #e8f0ff;
+            padding: 15px auto;
+        }
+        footer{
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre mí</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Servicios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <header>
+                <h2>¿Qué es HTML?</h2>
+                <time datetime="2026-01-21">21 de enero de 2026</time>
+            </header>
+<img src="img/html.webp" alt="foto de los icones" width="400">
+            <p>
+                <strong>HTML</strong>, abreviatura de <em>Lenguaje de Marcado de Hipertexto</em>, es el
+                <strong>lenguaje fundamental para crear páginas web</strong>.
+                Su función no es la programación, sino
+                <strong>describir la estructura y el contenido</strong> de una página web.
+                Podemos pensar en HTML como el <strong>esqueleto</strong> de una página web:
+                encabezados, párrafos, imágenes, listas y enlaces están definidos y organizados por HTML.
+            </p>
+
+            <p>
+                HTML consta de una serie de <strong>etiquetas</strong>, cada una con una función específica.
+                Estas etiquetas indican al navegador si un contenido es un encabezado, un párrafo o una imagen.
+                El navegador interpreta estas etiquetas para
+                <strong>presentar el contenido de la página web al usuario</strong>.
+            </p>
+            
+            <p>
+                Además de definir la estructura, HTML puede añadir información adicional mediante
+                <strong>atributos</strong>, como indicar el origen de una imagen o el destino de un enlace.
+                Aunque HTML no controla el estilo ni el comportamiento de una página web,
+                es la base de <em>CSS</em> (estilos) y <em>JavaScript</em> (interacciones).
+            </p>
+<img src="img/foto1.webp" alt="foto de los icones">
+            <p>
+                En pocas palabras, <strong>sin HTML no existen las páginas web</strong>.
+                HTML define la estructura básica, mientras que CSS y JavaScript hacen que la página
+                sea <strong>atractiva y dinámica</strong>.
+                Comprender HTML es el <strong>primer paso en el desarrollo front-end</strong>
+                y una parte clave del diseño web.
+            </p>
+
+        </article>
+
+        <aside>
+            <h3>Artículos relacionados</h3>
+            <ul>
+                <li><a href="#">HTML avanzado</a></li>
+                <li><a href="#">CSS básico</a></li>
+                <li><a href="#">Cómo usar Javascript</a></li>
+            </ul>
+        </aside>
+    </main>
+
+
+
+
+    <footer>
+        <p>Contacto: <a href="blog@email.com">viajes@email.com</a></p>
+    </footer>
+</body>
+
+</html>
