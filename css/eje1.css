@@ -1,0 +1,25 @@
+nav a{
+    color: rgb(223, 223, 255);
+}
+html{
+    background-color: black;
+}
+p:first-letter{
+    font-size: 30px;
+}
+p{
+    padding-left: 15px;
+}
+.fuente{
+    border-right:2px;
+    border-bottom:2px;
+    border-left:2px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+.fuente:hover{
+    border-color: green;
+    color: green;
+   
+}
