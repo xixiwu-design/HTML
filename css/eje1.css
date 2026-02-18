@@ -1,25 +1,120 @@
-nav a{
+nav a {
     color: rgb(223, 223, 255);
 }
-html{
+
+h1 {
+    text-transform: capitalize;
+}
+
+html {
     background-color: black;
 }
-p:first-letter{
+
+p:first-letter {
     font-size: 30px;
 }
-p{
-    padding-left: 15px;
+
+article {
+    display: flex;
+    gap: 20px;          /* 图片与文字间距 */
+    align-items: flex-start;
 }
-.fuente{
-    border-right:2px;
-    border-bottom:2px;
-    border-left:2px;
+article .texto {
+    flex: 1;             /* 文字占满剩余空间 */
+}
+
+.art{
+     display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.fuente {
+    border-right: 2px;
+    border-bottom: 2px;
+    border-left: 2px;
     background-color: black;
     color: rgb(255, 255, 255);
     font-size: 15px;
+
 }
-.fuente:hover{
+
+.fuente:hover {
     border-color: green;
     color: green;
-   
+
+}
+
+input{
+    background-color: var(--color-primari);
+}
+
+:root {
+    --color-primari: #000000;
+    --font-base: 'Helvetica', sans-serif;
+    --espaiat-std: 16px;
+}
+/* 外层容器，让卡片竖排，也可横排 */
+.ai-list {
+    display: flex;
+    flex-direction: column; /* 如果想横向排列改成 row */
+    gap: 20px;              /* 卡片之间间距 */
+    padding: 10px;
+}
+
+/* 每篇文章做卡片 */
+.ai-card {
+    display: flex;           /* 文字和图片横向排列 */
+    gap: 20px;
+    background-color: #111;  /* 卡片背景 */
+    padding: 15px;
+    border-radius: 10px;
+    align-items: flex-start;
+}
+
+/* 文字部分占满剩余空间 */
+.ai-card .texto {
+    flex: 1;
+}
+
+/* 图片固定大小 */
+.ai-card img {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 5px;
+}
+
+/* 按钮美化 */
+.ai-card button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: rgb(21, 125, 167);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ai-card button:hover {
+    background-color: rgb(214, 180, 69);
+}
+
+
+@media (width < 600) {
+    p{font-size: 14px;}
+    h1{font-size: 28px;}
+    h2{font-size: 22px;}
+}
+@media (1280>=width >= 600 ) {
+    p{font-size: 16px;}
+    h1{font-size: 32px;}
+    h2{font-size: 26px;}
+}
+@media (width > 1280) {
+    p{font-size: 18px;}
+    h1{font-size: 40px;}
+    h2{font-size: 32px;}
+
+    
 }
