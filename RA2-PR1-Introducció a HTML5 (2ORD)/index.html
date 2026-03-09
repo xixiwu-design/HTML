@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Xixi Wu">
+    <title>Restautant</title>
+    <style>
+        #descripcion {
+            display: flex;
+        }
+
+        img {
+            object-fit: contain
+        }
+
+        table {
+            margin: auto;
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+
+        th {
+            border: 1px solid;
+            padding: 3px;
+        }
+
+        td {
+            border: 1px solid;
+            padding: 3px;
+            text-align: center;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        input {
+            margin: 10px;
+        }
+
+        select {
+            margin: 10px;
+        }
+
+        section form button {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <h1>Kyoka</h1>
+    <nav>
+        <ul>
+            <li><a href="#descripcion">Sobre Kyoka</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#horario">Horario</a></li>
+            <li><a href="#reserves">Reserves</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!--Descripción-->
+        <section id="descripcion">
+            <p>
+                Hace de la <em>comida japonesa</em> su estandarte y se especializa en restaurantes de esa comida tipo
+                <strong>CARTA BUFFET</strong>.
+                <br>
+                Ofreciendo una <u>amplia variedad de exquisitos platos de sushi</u> para disfrutar con amigos y
+                familiares.
+            </p>
+            <img src="Kyoka.webp" alt="" style="width: 40%;">
+        </section>
+
+        <!--Botón con un link de main web-->
+        <a href="https://kyoka.es/"><button>Va al Web main</button></a>
+
+        <section id="menu">
+            <h2>MENÚ DEL DIA: </h2>
+            <p>Lunes a Viernes mediodía</p>
+            <ul>
+                <li><strong>Sopa de miso</strong></li>
+                <li><strong>Entrantes o vapor</strong></li>
+                <li><strong>Arroz o pasta o fritos o especiales o plancha</strong></li>
+                <li><Strong>Uramaki(8u.) ó maki(8u.) ó nigiri(4u.) ó sushi variad</Strong></li>
+            </ul>
+            <li>€ 13.50</li>
+        </section>
+
+        <!--Table de horario con style de border-->
+        <section id="horario">
+            <h2>HORARIO</h2>
+            <table>
+                <tr>
+                    <th>Dia</th>
+                    <th>almuerzo</th>
+                    <th>Cena</th>
+                </tr>
+                <tr>
+                    <td>Lunes</td>
+                    <td rowspan="3">12:00–16:30</td>
+                    <td rowspan="3">20:00–24:00</td>
+                </tr>
+                <tr>
+                    <td>Martes</td>
+                </tr>
+                <tr>
+                    <td>Miércoles</td>
+                </tr>
+                <tr>
+                    <td>Jueves</td>
+                    <td colspan="2">Cierra</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td rowspan="3">12:00–16:30</td>
+                    <td rowspan="3">20:00–24:00</td>
+                </tr>
+                <tr>
+                    <td>Sábado</td>
+                </tr>
+                <tr>
+                    <td>Domingo</td>
+                </tr>
+            </table>
+        </section>
+
+        <!--Formulario de reserves-->
+        <h2>RESERVES</h2>
+        <section id="reserves">
+            <form action="#" method="post">
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre">
+
+                <br>
+
+                <label for="email">Email: </label>
+                <input type="email">
+
+                <br>
+
+                <label for="n">Cliente: </label>
+                <select id="n">
+                    <option value="c1">Cliente1</option>
+                    <option value="c2">Cliente2</option>
+                    <option value="c3">Cliente3</option>
+                    <option value="c4">TNT</option>
+                </select>
+
+                <br>
+
+                <button type="submit" value="Enviar">Enviar</button>
+
+            </form>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
