@@ -1,0 +1,69 @@
+#descripcion {
+    display: flex;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+img {
+    object-fit: contain
+}
+
+table {
+    margin: auto;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid;
+    padding: 3px;
+}
+
+td {
+    border: 1px solid;
+    padding: 3px;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    margin: 10px;
+}
+
+select {
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section form button {
+    margin: 10px;
+}
+
+p {
+    color: rgb(68, 52, 99);
+}
+
+li {
+    color: rgb(68, 52, 99);
+}
+
+table {
+    color: rgb(68, 52, 99);
+}
+
+a:hover{
+    color: rgb(187, 36, 99);
+}
+
+button{
+    font-family: 'Courier New', Courier, monospace;
+}
