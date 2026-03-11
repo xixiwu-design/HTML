@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mitjans de transport-->
+  
+<mediosDeTransporte>
+    <bicicleta>
+        <v unidad="km/h">100</v>
+    </bicicleta>
+    <patinete>
+        <v unidad="km/h"></v>
+    </patinete>
+</mediosDeTransporte>

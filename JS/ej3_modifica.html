@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej3 lectura y modificacion de contenido</title>
+</head>
+
+<body>
+    <h1>Pagina exemple</h1>
+    <p id="text1">Estem aprenent javascript</p>
+    <p>Text d'exemple</p>
+    <br>
+    <button onclick="change()">Change segound line</button>
+
+    <script>
+        let p = document.querySelectorAll("p");
+        console.log(p[0].textContent);
+        console.log(p[1].textContent);
+
+        let text = document.getElementById("text1");
+        function change() {
+            text.textContent = "Javascript es un llenguatge de guions";
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<meteorologicos>
+    <ciudad lugar="Baecelona">
+        <temperatura unidad="°C">25</temperatura>
+        <humedad unidad="%">60</humedad>
+        <viento unidad="km/h">15</viento>
+    </ciudad>
+</meteorologicos>

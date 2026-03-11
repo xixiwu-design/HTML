@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<store xmlns:cat="http://example.com/categories"
+       xmlns:prod="http://example.com/products">
+
+    <cat:category>
+        <cat:name>Electrònica</cat:name>
+        <prod:product>
+            <prod:name>Telèfon Mòbil</prod:name>
+            <prod:price>699.99</prod:price>
+        </prod:product>
+    </cat:category>
+
+    <cat:category>
+        <cat:name>Llibres</cat:name>
+        <prod:product>
+            <prod:name>Novel·la de Misteri</prod:name>
+            <prod:price>14.50</prod:price>
+        </prod:product>
+    </cat:category>
+
+    <cat:category>
+        <cat:name>Roba</cat:name>
+        <prod:product>
+            <prod:name>Samarreta</prod:name>
+            <prod:price>19.99</prod:price>
+        </prod:product>
+    </cat:category>
+
+</store>

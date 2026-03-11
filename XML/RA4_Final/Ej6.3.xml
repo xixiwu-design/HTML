@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pelicules SYSTEM "Ej6.dtd">
+
+<pelicules>
+    <pelicula>
+        <titol>Casablanca</titol>
+        <director>Michael Curtiz</director>
+        <genere tipus="comedia"></genere>
+    </pelicula>
+</pelicules>

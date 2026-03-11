@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<datos> 
+    <producto>Pan &amp; Mantequilla</producto> 
+    <comentario>Me encanta el lenguaje C++ porque &gt; es un operador.</comentario> 
+    <libro titulo="Los &quot;Secretos&quot; del Código"> 
+        <autor>Juan Pérez</autor> 
+    </libro> </datos>

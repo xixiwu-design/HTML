@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--8 ej1-->
+<cursos xmlns:uni="http://example.com/university">
+    <uni:curs>
+        <uni:nom>Matemàtiques</uni:nom>
+        <uni:professor>Juan</uni:professor>
+        <uni:credits>6</uni:credits>
+    </uni:curs>
+    <uni:curs>
+        <uni:nom>Física</uni:nom>
+        <uni:professor>Maria</uni:professor>
+        <uni:credits>5</uni:credits>
+    </uni:curs>
+    <uni:curs>
+        <uni:nom>Llengua Catalana</uni:nom>
+        <uni:professor>Lopez</uni:professor>
+        <uni:credits>4</uni:credits>
+    </uni:curs>
+</cursos>

@@ -1,0 +1,9 @@
+<!ELEMENT productes (producto+)>
+<!ELEMENT producto (nom,descripcio?,categoria?)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT descripcio (#PCDATA)>
+<!ELEMENT categoria (#PCDATA)>
+
+<!ATTLIST producto codi ID #REQUIRED>
+<!ATTLIST producto preu CDATA #REQUIRED>
+<!ATTLIST producto disponibilitat CDATA "disponible">

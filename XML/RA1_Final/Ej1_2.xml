@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalog [
+    <!ENTITY euro "&#8364;">
+]>
+<catalog>
+    <libre titol="Presentes">
+        <autor>Paco Cerdà</autor>
+        <any>2024</any>
+        <preu unitat="&euro;">21.75</preu>
+    </libre>
+
+    <libre titol="El Principito">
+        <autor>Antoine de Saint-Exupéry</autor>
+        <any>1943</any>
+        <preu unitat="&euro;">10.40</preu>
+    </libre>
+
+    <libre titol="Cuentos de los Hermanos Grimm">
+        <autor>Jacob y Wilhelm Grimm</autor>
+        <any>1812</any>
+        <preu unitat="&euro;">11.35</preu>
+    </libre>
+</catalog>

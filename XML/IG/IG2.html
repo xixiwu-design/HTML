@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>守护屁股我辈义不容辞</title>
+    <style>
+        /* 全局样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1f5c; /* 深蓝色 */
+            color: #ff4d4d; /* 红色文字 */
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 标题栏 */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            font-size: 3em;
+            font-weight: bold;
+            
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(26, 31, 92, 0.85);
+            z-index: 10;
+        }
+
+        header span {
+            transition: transform 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        header span:hover {
+            transform: translateY(-15px) scale(1.2) rotate(-5deg);
+            text-shadow: 0 0 20px #ff0000, 0 0 30px #ff3333;
+        }
+
+        /* 主内容 */
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding-top: 120px; /* 留出 header 高度 */
+            overflow: hidden;
+        }
+/* 页脚样式 */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.5em;
+    color: #ffffff;
+    background: rgba(26, 31, 92, 0.9); /* 深蓝背景，和页面主色协调 */
+    position: relative; /* 不悬浮，固定在页面流中 */
+}
+
+
+
+        /* 内容文字块 */
+        .floating-text {
+            font-size: 2em;
+            margin: 15px;
+            line-height: 2em;
+            text-align: center;
+            animation: floatText 5s ease-in-out infinite alternate;
+            text-shadow: 0 0 5px #ff0000, 0 0 10px #ff3333;
+        }
+
+        /* 多样化行样式 */
+        .line1 { color: #ff4d4d; font-style: italic; }
+        .line2 { color: #ff1a1a; font-weight: bold; }
+        .line3 { color: #ff6666; text-decoration: underline; }
+
+        /* 悬浮动画 */
+        @keyframes floatText {
+            0% { transform: translateY(0px) rotate(0deg); opacity: 0.8; }
+            25% { transform: translateY(-15px) rotate(-2deg); opacity: 1; }
+            50% { transform: translateY(-30px) rotate(2deg); opacity: 0.9; }
+            75% { transform: translateY(-15px) rotate(-1deg); opacity: 1; }
+            100% { transform: translateY(0px) rotate(0deg); opacity: 0.8; }
+        }
+
+        /* 文字闪烁效果 */
+        .floating-text::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 20px #ff0000, 0 0 40px #ff3333;
+            animation: flicker 2s infinite alternate;
+        }
+
+        @keyframes flicker {
+            0% { opacity: 0.7; }
+            50% { opacity: 1; }
+            100% { opacity: 0.7; }
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            header { font-size: 2em; padding: 15px 20px; }
+            .floating-text { font-size: 1.5em; margin: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span>EJ</span>
+        <span>IG</span>
+        <span>BP</span>
+    </header>
+
+    <main>
+        <!-- 生成多行内容，自适应屏幕 -->
+        <div class="floating-text line1">不许碰她老公的屁股</div>
+        <div class="floating-text line2">不许碰她老公的屁股</div>
+        <div class="floating-text line3">不许碰她老公的屁股</div>
+        <div class="floating-text line1">不许碰她老公的屁股</div>
+        <div class="floating-text line2">不许碰她老公的屁股</div>
+        <div class="floating-text line3">不许碰她老公的屁股</div>
+        <div class="floating-text line1">不许碰她老公的屁股</div>
+        <div class="floating-text line2">不许碰她老公的屁股</div>
+        <div class="floating-text line3">不许碰她老公的屁股</div>
+    </main>
+    <footer>
+    谢邀 人在上课 这个送给你
+</footer>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<!ELEMENT llibreria (llibre+)>
+<!ATTLIST llibre id ID #REQUIRED>
+<!ELEMENT llibre  (titol,autor,genere,preu)>
+<!ELEMENT titol (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT genere (#PCDATA)>
+<!ELEMENT preu (#PCDATA)>
+<!ATTLIST preu moneda (EUR | DOL) "EUR">

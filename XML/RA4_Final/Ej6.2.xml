@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pelicules SYSTEM "Ej6.dtd">
+
+<pelicules>
+    <pelicula>
+        <titol>Casablanca</titol>
+        <director>Michael Curtiz</director>
+        <actors>
+            <actor>Paul Henreid</actor>
+            <actor>Humphrey Bogart</actor>
+        </actors>
+        <genere tipus="accio"></genere>
+    </pelicula>
+</pelicules>

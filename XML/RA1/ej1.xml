@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persons>
+    <student id="1">
+        <name>Marc</name>
+        <age>18 años</age>
+   
+    </student>
+
+    <student id="2">
+        <name>Xixi</name>
+        <age>18 años</age>
+    </student>
+    
+    <student id="3">
+        <name>judit</name>
+        <age>19 años</age>
+    </student>
+</persons>

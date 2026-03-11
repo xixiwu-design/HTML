@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE biblioteca SYSTEM "DTD1.dtd">
+
+
+<biblioteca>  
+    <llibre>    
+        <titol>El senyor dels anells</titol>    
+        <autor>J.R.R. Tolkien</autor>    
+        <any>1954</any>  
+    </llibre>  
+    <llibre>    
+        <titol>Cien años de soledad</titol>    
+        <autor>Gabriel García Márquez</autor>    
+        <any>1967</any>  
+    </llibre> 
+</biblioteca>

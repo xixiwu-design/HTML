@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalog [
+    <!ENTITY euro "&#8364;">
+]>
+<productos 
+xmlns:el="http://example.com/electronics"
+xmlns:fur="http://example.com/furniture">
+    <el:producto>
+        <el:categoria>Electronica</el:categoria>
+        <el:nombre>Televisor</el:nombre>
+        <el:precio unidad="&euro;">399,99</el:precio>
+    </el:producto>
+    <fur:producto>
+        <fur:categoria>Mobles</fur:categoria>
+        <fur:nombre>Sofa</fur:nombre>
+        <fur:precio unidad="&euro;">399,99</fur:precio>
+    </fur:producto>
+</productos>

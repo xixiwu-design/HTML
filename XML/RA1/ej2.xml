@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<coches>
+    <coche matricula="1234ABC">
+        <marca>Seat</marca>
+        <model>Ibiza</model>
+        <ano>2022</ano>
+    </coche>
+
+    <coche matricula="5678XYZ">
+        <marca>Tesla</marca>
+        <model>Model 3</model>
+        <ano>2023</ano>
+    </coche>
+</coches>

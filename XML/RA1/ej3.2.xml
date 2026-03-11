@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Pel·lícules 2errores-->
+
+<peliculas>
+    <pelicula>
+        <titulo>Con faldas y a lo loco</titulo>
+        <director>Billy Wilder</director>
+        <autor>barto</autor>
+    </pelicula>
+    <pelicula>
+        <titulo>Sopa de ganso</titulo>
+        <director>Leo McCarey</director>
+        <autor>barto</autor>
+    </pelicula>
+</peliculas>

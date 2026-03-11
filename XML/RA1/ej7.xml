@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--ej9 2-->
+<!DOCTYPE oferta [
+    <!ENTITY euro "&#8364;">
+]>
+<condicions>
+    <!-- ej9 1--><sensor id="temp_habitacio" limit="temperatura &gt; 40&#176;C"/>
+    <oferta>compres &gt;  50&euro; &amp; &lt; 100&euro; </oferta>
+</condicions>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Hoteles>
+    <hotel nombre="">
+        <Telefono></Telefono>
+        <Dirección></Dirección>
+        <Ciudad></Ciudad>
+        <País></País>
+        <Estrellas></Estrellas>
+        <Descripción></Descripción>
+        <Habitaciones_individuales></Habitaciones_individuales>
+        <Suites></Suites>
+    </hotel>
+    
+     <hotel nombre="">
+        <Telefono></Telefono>
+        <Dirección></Dirección>
+        <Ciudad></Ciudad>
+        <País></País>
+        <Estrellas></Estrellas>
+        <Descripción></Descripción>
+        <Habitaciones_individuales></Habitaciones_individuales>
+        <Suites></Suites>
+    </hotel>
+</Hoteles>

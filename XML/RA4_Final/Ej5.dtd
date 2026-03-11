@@ -1,0 +1,18 @@
+<!ELEMENT inventari (vehicle+)>
+<!ELEMENT vehicle (dades,ubicacio,comentari)>
+<!ATTLIST vehicle id ID #REQUIRED>
+
+<!ELEMENT dades (marca,model,matricula)>
+<!ATTLIST dades tipus (comercial|personal) #REQUIRED>
+
+<!ELEMENT ubicacio (#PCDATA)>
+<!ATTLIST ubicacio tipus CDATA #REQUIRED>
+
+<!ELEMENT comentari (#PCDATA)>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT model (nom,variant?)>
+<!ATTLIST model complet (si|no) "si">
+
+<!ELEMENT matricula (#PCDATA)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT variant (#PCDATA)>

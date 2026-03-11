@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<peliculas>
+    <pelicula titulo="">
+        <director></director>
+        <ano></ano>
+        <genero></genero>
+        <duracion></duracion>
+    </pelicula>
+</peliculas>

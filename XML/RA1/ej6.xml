@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<biblioteca xmlns:li="http://exemple.org/llibres"
+            xmlns:re="http://exemple.org/revistes">
+    <li:llibre>
+        <li:títol>nomli</li:títol>
+        <li:autor>Marin</li:autor>
+    </li:llibre>
+
+    <re:revista>
+        <re:títol>nomre</re:títol>
+        <re:editor>Ali</re:editor>
+    </re:revista>
+</biblioteca>

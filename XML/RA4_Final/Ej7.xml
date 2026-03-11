@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE productes SYSTEM "Ej7.dtd">
+<productes>
+    <producto codi="P001" preu="1.99" disponibilitat="disponible">
+        <nom>llet</nom>
+        <descripcio>Llet dolça</descripcio>
+        <categoria>Begudes</categoria>
+    </producto>
+    <producto codi="P002" preu="19.99" disponibilitat="disponible">
+        <nom>xocolata</nom>
+        <categoria>xocolata</categoria>
+    </producto>
+    <producto codi="P003" preu="0.99" disponibilitat="no disponible">
+        <nom>Pa</nom>
+        <descripcio>Al·lèrgens: Cereals</descripcio>
+    </producto>
+</productes>
