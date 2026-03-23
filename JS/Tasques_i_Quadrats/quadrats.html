@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #default{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(194, 74, 74);
+        }
+        body{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div id="default"></div>
+
+    <script>
+        let x = 0;
+        let cuadro = document.getElementById("default");
+
+        function colorAleatori() {
+            //Aleatori color
+            let r = Math.floor(Math.random() * 256);
+            let g = Math.floor(Math.random() * 256);
+            let b = Math.floor(Math.random() * 256);
+            return `rgb(${r},${g},${b})`;
+        }
+        function crearCuadro() {
+            let newCuadro = document.createElement("div");
+            /**newCuadro.style.position = "absolute"; //Si no hay posicion, left no funciona
+            *newCuadro.classList= "cuadro";
+            */
+            newCuadro.style.left = x + "px";
+            newCuadro.style.width = "100px";
+            newCuadro.style.height = "100px";
+            newCuadro.style.backgroundColor = colorAleatori();
+            document.body.appendChild(newCuadro);
+        }
+
+        cuadro.addEventListener("click", function() {
+            x += 100;
+            crearCuadro();
+        });
+
+        document.addEventListener("keydown", function(event) {  
+             if (event.key.toUpperCase() === "R"){
+                let cuadros = document.querySelectorAll(".cuadro");//.forEach(a => a.remove());
+                cuadros.forEach(a => {
+                    a.remove();
+                });
+                x = 0;
+             }
+        });
+
+    </script>
+</body>
+</html>

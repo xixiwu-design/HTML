@@ -18,6 +18,14 @@
         let p = document.querySelectorAll("p");
         console.log(p[0].textContent);
         console.log(p[1].textContent);
+        //o
+        for (let a of p) {
+            console.log(a.textContent);
+        }
+        //o
+        p.forEach(function (a) {
+            console.log(a.textContent);
+        });
 
         let text = document.getElementById("text1");
         function change() {

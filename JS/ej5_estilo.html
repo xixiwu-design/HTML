@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej5 6 Manipulació d’estils</title>
+    <style>
+        #a{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="a"></div>
+    <script>
+        let element = document.getElementById("a");
+        element.onclick= function cambia(){
+            element.style.width="200px";
+            element.style.height="200px";
+            element.style.backgroundColor="red";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tasques.css">
+</head>
+
+<body>
+    <form>
+        <input type="text" id="tasca" name="tasca" placeholder="Descripció de la tasca">
+        <input type="submit" id="afegir" name="afegir" value="Afegir tasca">
+    </form>
+    <h1>Llista de tasques</h1>
+    <ol id="llista"></ol>
+
+    <script>
+
+        let sub = document.querySelector("#afegir");
+        sub.onclick = function (event) {
+            //para no actualizar la pagina
+            event.preventDefault();
+
+            //leer comtenido de text
+            let tas = document.querySelector("#tasca").value;
+
+            if(tas!=""){
+                let ol = document.getElementById("llista");
+                let li = document.createElement("li");
+                li.textContent=tas;
+                ol.appendChild(li);
+                document.querySelector("#tasca").value = "";
+            }
+        }
+    </script>
+</body>
+
+</html>

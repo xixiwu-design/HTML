@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej4 modifica foto</title>
+</head>
+
+<body>
+
+    <img alt="aaa" id="fotoo" width="300">
+
+    <script>
+        let imatge = document.getElementById("fotoo");
+
+        let url = imatge.getAttribute("src");
+        console.log(url);
+        imatge.removeAttribute("width");
+        imatge.setAttribute('src', 'foto/logo.png');
+
+        //herf
+        imatge.onclick = function () {
+            window.location.href = "https://google.com";
+        };    
+        
+        </script>
+</body>
+
+</html>
+
+
+<!--Modificar atributs: 
+○ Utilitzar setAttribute() per afegir o modificar atributs: 
+    let imatge = document.getElementById("imatge"); 
+    imatge.setAttribute("src", "nova-imatge.jpg"); 
+○ Llegir atributs amb getAttribute(): 
+    let url = enllaç.getAttribute("href"); 
+    console.log(url); 
+○ Eliminar atributs amb removeAttribute(): 
+    imatge.removeAttribute("alt");-->

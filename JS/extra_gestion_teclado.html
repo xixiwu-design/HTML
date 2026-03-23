@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="paraula">
+        <span class="lletraJ">-</span>
+        <span class="lletraA">-</span>
+        <span class="lletraV">-</span>
+        <span class="lletraA">-</span>
+        <span class="lletraS">-</span>
+        <span class="lletraC">-</span>
+        <span class="lletraR">-</span>
+        <span class="lletraI">-</span>
+        <span class="lletraP">-</span>
+        <span class="lletraT">-</span>
+    </div>
+
+    <script>
+        document.addEventListener("keydown", function (event) {
+            let lletra = event.key.toUpperCase();
+
+            let elements = document.querySelectorAll(".lletra" + lletra);
+
+            if (0 < elements.length) {
+                for (let a of elements) {
+                    a.textContent = lletra;
+
+                }
+            } else {
+                alert("No hi ha la lletra");
+            }
+        });
+    </script>
+</body>
+
+</html>
