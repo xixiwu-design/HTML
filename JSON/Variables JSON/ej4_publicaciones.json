@@ -1,0 +1,38 @@
+[
+  {
+    "titulo": "El misterio",
+    "autor": {
+      "nombre": "Joan Martínez",
+      "nacionalidad": "Española"
+    },
+    "capitulos": [
+      "El comienzo",
+      "El misterio",
+      "El final"
+    ]
+  },
+  {
+    "titulo": "Libro de libro",
+    "autor": {
+      "nombre": "Maria López",
+      "nacionalidad": "Argentina"
+    },
+    "capitulos": [
+      "Primer encuentro",
+      "Despedida",
+      "Secreto"
+    ]
+  },
+  {
+    "titulo": "Diario del gato risueño",
+    "autor": {
+      "nombre": "HongYing Yang",
+      "nacionalidad": "China"
+    },
+    "capitulos": [
+      "Un gato risueño",
+      "Una tortuga mágica",
+      "Un gatito"
+    ]
+  }
+]

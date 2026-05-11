@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        pre {
+            background-color: #d9d9e0;
+            border: 1px solid #dadbe0;
+            padding: 10px;
+            border-radius: 8px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            max-width: 500px;
+
+        }
+
+        button {
+            background-color: #d9d9e0;
+            border-radius: 5px;
+            border-width: 1px;
+            padding: 5px;
+        }
+
+        button:hover {
+            background-color: #4d3fca;
+            color: white;
+            border: 1px solid #3526b9;
+        }
+
+        div {
+            width: 500px;
+            margin: auto;
+        }
+
+        @media (width<=500px) {
+            div {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h1>Lectura de json </h1>
+
+        <button onclick="mostrarDades()">Mostrar Dades JSON</button>
+
+        <pre id="salida"></pre>
+    </div>
+
+
+
+
+
+    <script>
+        const dades = {
+            "estudiant": {
+                "nom": "Maria",
+                "edat": 22,
+                "curs": "Enginyeria Informatica",
+                "assignatures": [
+                    "Programacio",
+                    "Matematiques",
+                    "Disseny de Software"
+                ]
+            },
+
+            "llibre": {
+                "titol": "El Senyor dels Anells",
+                "autor": "J.R.R. Tolkien",
+                "any_publicacio": 1954,
+                "generes": [
+                    "Fantasia",
+                    "Aventura"
+                ]
+            },
+
+            "videojoc": {
+                "titol": "The Legend of Zelda",
+                "plataforma": "Nintendo Switch",
+                "any_llancament": 2017,
+                "caracteristiques": {
+                    "tipus": "Acció/Aventura",
+                    "jugadors": 1,
+                    "multijugador": false
+                }
+            },
+
+            "esdeveniment": {
+                "nom": "Concert de Rock",
+                "data": "2025-07-15",
+                "lloc": "Estadi Olimpic",
+                "assistents": [
+                    {
+                        "nom": "Joan",
+                        "rol": "Organitzador"
+                    },
+                    {
+                        "nom": "Maria",
+                        "rol": "Music"
+                    },
+                    {
+                        "nom": "Pere",
+                        "rol": "Tecnic"
+                    }
+                ]
+            }
+        };
+    </script>
+    <script>
+        function mostrarDades() {
+            const jsonString = JSON.stringify(dades, null, 2);
+            console.log(jsonString);
+            document.getElementById("salida").textContent = jsonString;
+        }
+    </script>
+</body>
+
+</html>

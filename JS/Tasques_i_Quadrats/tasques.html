@@ -26,14 +26,21 @@
             //leer comtenido de text
             let tas = document.querySelector("#tasca").value;
 
-            if(tas!=""){
+            if (tas != "") {
                 let ol = document.getElementById("llista");
                 let li = document.createElement("li");
-                li.textContent=tas;
+                let boton = document.createElement("button");
+                boton.textContent = "Eliminar";
+                li.textContent = tas + " ";
+                li.appendChild(boton);
                 ol.appendChild(li);
                 document.querySelector("#tasca").value = "";
+                boton.onclick = function () {
+                    li.remove();
+                }
             }
         }
+
     </script>
 </body>
 

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej8</title>
+</head>
+
+<body>
+
+    
+    <script>
+        const data = [
+            {
+                "destinacio": "Nueva York",
+                "durada_dies": 14,
+                "itinerari" : [
+                    "La Estatua de la Libertad",
+                    "Central Park",
+                    "El Empire State"
+                ],
+                "preu": 1500
+            },
+            {
+                "destinacio": "Beijing",
+                "durada_dies": 3,
+                "itinerari" : [
+                    "La Gran Muralla",
+                    "La Ciudad Prohibida",
+                    "El Templo del Cielo"
+                ],
+                "preu": 400
+            },
+            {
+                "destinacio": "París",
+                "durada_dies": 7,
+                "itinerari" : [
+                    "La Torre Eiffel",
+                    "El Museo del Louvre",
+                    "La Catedral de Notre-Dame"
+                ],
+                "preu": 1000
+            }
+        ];
+
+        data.forEach(a => {
+            if(a.durada_dies >3){
+                a.categoria = "Vacances";
+            }else{
+                a.categoria = "Escapada";
+            }
+        });
+        let html = "";
+        data.forEach(viatge => {
+            html += `<h2>Viage a ${viatge.destinacio} </h2>`;
+            html += `<ul>`;
+            viatge.itinerari.forEach(l => {
+                html += `<li>${l}</li>`;
+            });
+            html += `</ul>`;
+        });
+        document.body.innerHTML = html;
+    </script>
+
+</body>
+
+</html>

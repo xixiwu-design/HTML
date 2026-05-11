@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>API Exercise</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+        }
+
+        .card{
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+        }
+
+        img{
+            width: 200px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<h1>Rick and Morty Characters</h1>
+
+<div id="resultat"></div>
+
+<script>
+
+fetch("https://rickandmortyapi.com/api/character")
+    .then(resposta => resposta.json())
+    .then(personatges => {
+
+        let html = "";
+
+        personatges.results.forEach(personatge => {
+
+            html += `
+            
+            <div class="card">
+
+                <h3>${personatge.name}</h3>
+
+                <img src="${personatge.image}">
+
+                <p>Status: ${personatge.status}</p>
+
+                <p>Species: ${personatge.species}</p>
+
+            </div>
+            
+            `;
+
+        });
+
+        document.getElementById("resultat").innerHTML = html;
+
+    });
+
+</script>
+
+</body>
+</html>

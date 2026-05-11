@@ -1,0 +1,54 @@
+[
+    {
+        "Nombre": "Xixi",
+        "Edad": 18,
+        "adres": {
+            "calle": "Calle No Lo Sé, 123",
+            "codi_postal": "08001"
+        },
+        "Modulos_Matruculados": [
+            {
+                "Asignatura": "Programación",
+                "Horas_total": 120
+            },
+            {
+                "Asignatura": "Base de Datos",
+                "Horas_total": 200
+            },
+            {
+                "Asignatura": "Sistemas Operativos",
+                "Horas_total": 150
+            },
+            {
+                "Asignatura": "Lenguaje de Marcas",
+                "Horas_total": 100
+            }
+        ]
+    },
+    {
+        "Nombre": "Wen",
+        "Edad": 19,
+        "adres": {
+            "calle": "Calle No Lo Sé, 123",
+            "codi_postal": "08001"
+        },
+        "Modulos_Matruculados": [
+            {
+                "Asignatura": "Programación",
+                "Horas_total": 120
+            },
+            {
+                "Asignatura": "Base de Datos",
+                "Horas_total": 200
+            },
+            {
+                "Asignatura": "Sistemas Operativos",
+                "Horas_total": 150
+            },
+            {
+                "Asignatura": "Lenguaje de Marcas",
+                "Horas_total": 100
+            }
+        ]
+    }
+]

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej7</title>
+</head>
+
+<body>
+
+    <script>
+        const data = [
+            {
+                "destinacio": "Nueva York",
+                "durada_dies": 14,
+                "preu": 1500
+            },
+            {
+                "destinacio": "Beijing",
+                "durada_dies": 3,
+                "preu": 400
+            },
+            {
+                "destinacio": "París",
+                "durada_dies": 7,
+                "preu": 1000
+            }
+        ];
+
+        data.forEach(a => {
+            if(a.durada_dies >3){
+                a.categoria = "Vacances";
+            }else{
+                a.categoria = "Escapada";
+            }
+        });
+        let html = "";
+        data.forEach(viatge => {
+            html += `<p>Viatge a ${viatge.destinacio} - ${viatge.durada_dies} dies per només ${viatge.preu} € (${viatge.categoria})</p>`;
+        });
+        document.body.innerHTML = html;
+    </script>
+
+</body>
+
+</html>

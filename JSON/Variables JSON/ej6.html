@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej6</title>
+</head>
+
+<body>
+
+    <script>
+        const data = [
+            {
+                "destinacio": "Nueva York",
+                "durada_dies": 14,
+                "preu": 1500
+            },
+            {
+                "destinacio": "Beijing",
+                "durada_dies": 3,
+                "preu": 400
+            },
+            {
+                "destinacio": "París",
+                "durada_dies": 7,
+                "preu": 1000
+            }
+        ];
+
+        let html = "";
+        data.forEach(viatge => {
+            html += `<p>Viatge a ${viatge.destinacio} - ${viatge.durada_dies} dies per només ${viatge.preu} €</p>`;
+        });
+        document.body.innerHTML = html;
+    </script>
+
+</body>
+
+</html>

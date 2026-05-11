@@ -1,0 +1,18 @@
+{
+    "Nombre": "Restaurant Lagar",
+    "Ubicacion": "Carrer del Llenguadoc, 6",
+    "Menu": [
+        {
+            "Plato": "Paella",
+            "Precio": 12.50
+        },
+        {
+            "Plato": "Ensalada Mixta",
+            "Precio": 8.00
+        },
+        {
+            "Plato": "Tortilla de Patatas",
+            "Precio": 10.00
+        }
+    ]
+}

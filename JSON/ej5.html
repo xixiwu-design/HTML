@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulació de dades amb JSON</title>
+</head>
+
+<body>
+
+<h1>Producte</h1>
+
+
+
+
+    <script>
+        const jsonProductes = `[ 
+        { "id": 1, "nom": "Ratolí", "preu": 25 }, 
+         { "id": 2, "nom": "Teclat mecànic", "preu": 85 }, 
+          { "id": 3, "nom": "Estora de taula", "preu": 15 }, 
+           { "id": 4, "nom": "Monitor", "preu": 210 } ]`;
+        const productes = JSON.parse(jsonProductes);
+        console.log(productes);
+
+        let html = "<ul>";
+            productes.forEach(producte => {
+                html += `<li>${producte.nom} <b>[${producte.preu}€]</b></li>`;
+            });
+        html += "</ul>";
+        document.write(html);
+    </script>
+
+</body>
+
+</html>
